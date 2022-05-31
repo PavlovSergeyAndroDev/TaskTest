@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingHorizontal="@dimen/_4dp"
+		android:paddingVertical="@dimen/_8dp">
+
+	<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/rvAccountList"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+
+	<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fontFamily="@font/roboto_medium_italic" />
+</FrameLayout>

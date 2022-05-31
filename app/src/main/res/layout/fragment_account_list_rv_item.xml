@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/cvItemAccountsList"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		<com.gmail.pavlovsv93.testtask.utils.EquilateralImageView
+				android:id="@+id/ivAvatar"
+				android:layout_width="@dimen/_0dp"
+				android:layout_height="@dimen/_0dp"
+				android:src="@drawable/ic_baseline_person_24"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@id/mtvName"
+				app:layout_constraintHorizontal_weight="@integer/_1"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+		<com.google.android.material.textview.MaterialTextView
+				android:id="@+id/mtvName"
+				android:layout_width="@dimen/_0dp"
+				android:layout_height="@dimen/_0dp"
+				android:textSize="@dimen/_25sp"
+				app:fontFamily="@font/roboto_black"
+				app:layout_constraintBottom_toTopOf="@id/mtvDescription"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_weight="@integer/_2"
+				app:layout_constraintStart_toEndOf="@id/ivAvatar"
+				app:layout_constraintTop_toTopOf="@id/ivAvatar"
+				tools:text="@string/app_name"
+				android:gravity="center"/>
+
+		<com.google.android.material.textview.MaterialTextView
+				android:id="@+id/mtvDescription"
+				android:layout_width="@dimen/_0dp"
+				android:layout_height="@dimen/_0dp"
+				app:fontFamily="@font/roboto_medium_italic"
+				app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
+				app:layout_constraintEnd_toEndOf="@id/mtvName"
+				app:layout_constraintHorizontal_weight="@integer/_2"
+				app:layout_constraintStart_toEndOf="@id/ivAvatar"
+				app:layout_constraintTop_toBottomOf="@id/mtvName"
+				tools:text="@string/app_name" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
