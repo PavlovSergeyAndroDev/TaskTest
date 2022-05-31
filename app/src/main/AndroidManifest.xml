@@ -14,7 +14,7 @@
 			android:theme="@style/Theme.TestTask"
 			tools:targetApi="31">
 		<activity
-				android:name=".MainActivity"
+				android:name=".HitHubActivity"
 				android:exported="true">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
